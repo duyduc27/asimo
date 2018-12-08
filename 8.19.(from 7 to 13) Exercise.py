@@ -1,5 +1,15 @@
 # Exercise 8.19.7 8 9 10 11 12 13
 import sys
+def remove_all_1(ch, seq): # 8.19.3
+    """Remove all specify substring occurence from a string"""
+    a = seq
+    while a:
+        # Use a while loop and repeatly calling remove function (from 8.19.12 Exercise) till have nothing to remove
+        if remove(ch, a) == a:
+            return remove(ch, a)
+        else:
+            a = remove(ch, a)
+            
 
 def remove_all(ch, seq): # 8.19.3
     """Remove all specify substring occurence from a string"""
