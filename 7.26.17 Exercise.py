@@ -27,24 +27,15 @@ def main_one():
     The program will terminate if their input is "y"
     """
     while True:
-        import random                  # See Modules chapter ...
-        rng = random.Random()
-        # Pick a random result between -1 and 1.
-        result = rng.randrange(-1,2)
         round_game += 1
-        print("Human plays first={0},  winner={1} "
-                           .format(True, result)) # Boolean value True for human
-        # So in function play_once(), my friend will make a rule for the game.
-        # True: human come first, False: computer come first
-        # This one should be hidden in a real game
-
-        if result == -1:
+        a = play_once(True) # Human play first
+        if a == -1:
             print("human won")
             win += 1
-        elif result == 0:
+        elif a == 0:
             print("game drawn")
             drawn += 1
-        elif result == 1:
+        elif a == 1:
             print("computer won")
             lose += 1
         ratio = round(win/round_game*100,2) # Ratio between win and total games
