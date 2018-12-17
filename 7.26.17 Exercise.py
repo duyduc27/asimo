@@ -24,7 +24,7 @@ def main_one():
     lose = 0
     """
     Make a while loop. Player can play how many rounds as they want.
-    The program will terminate if their input is "y"
+    The program will terminate if their input is NOT "y"
     """
     while True:
         round_game += 1
