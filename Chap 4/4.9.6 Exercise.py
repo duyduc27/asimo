@@ -1,10 +1,10 @@
-# 4.9.3 ok
+# Exercise 4.9.6 OK
 import turtle
 def draw_poly(t, n, sz):
     for i in range(n):
 
         t.forward(sz)
-        t.left(45)
+        t.left(120)
 
 wn = turtle.Screen()
 wn.bgcolor("lightgreen")
@@ -14,6 +14,9 @@ tess.color("hotpink")
 tess.pensize(3)
 tess.speed(1)
 
-draw_poly(tess, 8, 50)
+def draw_equitriangle(t, sz):
+    draw_poly(t, 3, sz)
+
+draw_equitriangle(tess, 50)
 
 wn.exitonclick()
