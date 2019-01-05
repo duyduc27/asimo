@@ -1,0 +1,2 @@
+After testing (few times) 13.11.4 Exercise.py both 2 vers. Their elapsed time have almost same values.
+So I suppose that both ways have same effective speed. But I prefer the second ways. Why? Becase it's clearly than the first way.
