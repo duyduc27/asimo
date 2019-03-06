@@ -57,7 +57,7 @@ def analyse_dic(dic): # For testing
         ct += 1
         if ct < 10: # Because I don't want to print all list
             print(layout.format(k, dic[k]))
-    for k in dic.keys():
+    for k in dic.keys(): # Code block for finding the longest word in "Alice in Wonderland"
         if len(k) > length:
             length = len(k)
             longest_wd = k
